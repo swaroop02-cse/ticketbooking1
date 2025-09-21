@@ -19,7 +19,7 @@ services:
     build:
     
       context: ./SDP-CICD-B
-      dockerfile: ../SDP-FULLSTACK/backend.Dockerfile
+      dockerfile: ../SDP-FULL-STACK/backend.Dockerfile
     image: sdp-cicd-backend
     ports:
       - "8887:7888" # backend port changed to 7888(HOST)
@@ -31,7 +31,7 @@ services:
     container_name: react
     build:
       context: ./SDP-CICD-F
-      dockerfile: ../SDP-FULLSTACK/frontend.Dockerfile
+      dockerfile: ../SDP-FULL-STACK/frontend.Dockerfile
     image: sdp-cicd-frontend
     ports:
       - "3000:80"
