@@ -4,7 +4,7 @@ services:
     image: mysql:8
     
     environment:
-      MYSQL_ROOT_PASSWORD: vaishnavi@#1234
+      MYSQL_ROOT_PASSWORD: swaroop@143
       MYSQL_DATABASE: SDPDP-beta
       # app.prop : Db = SDPDB-35
       # MYSQL_USER: klu
