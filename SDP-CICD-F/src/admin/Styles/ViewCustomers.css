@@ -1,58 +1,89 @@
+/* Updated Modern UI for Customer Table */
+
 .container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 25px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #eef3ff, #ffffff);
+    border-radius: 14px;
 }
 
 .heading {
     text-align: center;
-    color: black;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    text-decoration: underline;
+    color: #0D3B66;
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
 }
 
 .error-message {
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
-    color: red;
+    font-weight: 600;
+    color: #d32f2f;
 }
 
 .customer-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-}
-
-.customer-table th,
-.customer-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+    margin-top: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .customer-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background-color: #5271ff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.customer-table td {
+    padding: 12px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .customer-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f4f6ff;
 }
 
 .customer-table tr:hover {
-    background-color: #e6f7ff;
-}
-
-.delete-button {
-    color: #d32f2f;
-    border-color: #d32f2f;
+    background-color: #e8eeff;
     transition: 0.3s ease;
 }
 
+/* Delete Button */
+.delete-button {
+    background-color: transparent;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #ff3b3b;
+    border: 1px solid #ff3b3b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .delete-button:hover {
-    background-color: #ffcdd2;
-    border-color: #b71c1c;
+    background-color: #ffe6e6;
+    border-color: #d60000;
+    color: #d60000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 24px;
+    }
+
+    .customer-table th,
+    .customer-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
 }

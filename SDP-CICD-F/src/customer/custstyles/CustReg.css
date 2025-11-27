@@ -1,98 +1,119 @@
-/* General Styling for Customer Registration */
+/* ===========================
+   Modern Customer Registration UI
+   =========================== */
 .customer-registration-container {
-  padding: 30px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
 }
 
-/* Title for the Form */
+.customer-registration-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Title */
 .customer-registration-title {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+  margin-bottom: 25px;
+  color: #4a0080;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Form Styles */
+/* Form Layout */
 .customer-registration-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
-/* Individual Form Fields */
+/* Form Field Wrapper */
 .customer-form-field {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 100%;
 }
 
-.customer-form-field {
-  display: flex;
-  justify-content: right; /* Horizontally centers the child elements */
-  align-items: center; /* Vertically centers the child elements */
-  width: 100%; /* Ensure the parent takes the full available width */
-}
-
+/* Input + Select Styling */
 .customer-form-field input,
 .customer-form-field select {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  align-content: center;
+  padding: 12px;
+  font-size: 15px;
+  border: 1.5px solid #b7b7b7;
   border-radius: 10px;
-  width: 50%;
-  box-sizing: border-box;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  background: #fafafa;
 }
 
-/* Submit Button Styles */
+.customer-form-field input:focus,
+.customer-form-field select:focus {
+  border-color: #7b00ff;
+  box-shadow: 0 0 8px rgba(123, 0, 255, 0.2);
+  outline: none;
+  background: white;
+}
+
+/* Button */
 .customer-submit-btn {
-  background-color: #4CAF50;
+  background: linear-gradient(135deg, #7b00ff, #b300ff);
   color: white;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 14px 20px;
+  font-size: 17px;
+  font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
-  width: 50%;
-  margin-top: 20px;
-  align-self: center; /* Center the button horizontally */
+  width: 60%;
+  align-self: center;
+  transition: 0.3s ease-in-out;
 }
 
 .customer-submit-btn:hover {
-  background-color: #45a049;
+  background: linear-gradient(135deg, #5a00bf, #9900d6);
+  transform: scale(1.05);
 }
 
-/* Message Styles */
+/* Messages */
 .customer-response-message {
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
   font-weight: bold;
   padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
 }
 
 .customer-response-message.success {
-  color: green;
+  color: #0f7a1e;
+  background: #d8f8dd;
 }
 
 .customer-response-message.error {
-  color: red;
+  color: #b70000;
+  background: #ffd6d6;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .customer-registration-container {
-    padding: 20px;
+    padding: 25px;
+    margin: 20px;
   }
 
   .customer-registration-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .customer-submit-btn {
-    font-size: 20px;
-    padding: 10px;
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
   }
 }

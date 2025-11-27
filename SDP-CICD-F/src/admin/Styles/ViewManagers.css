@@ -1,47 +1,80 @@
 .container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 25px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #eef3ff, #ffffff);
+    border-radius: 12px;
 }
 
 .heading {
     text-align: center;
-    color: black;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    text-decoration: underline;
+    color: #0D3B66;
+    font-weight: 800;
+    margin-bottom: 22px;
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #5271ff;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .error-message {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    color: red;
+    color: #d60000;
+    margin-top: 10px;
 }
 
+/* Table Styling */
 .manager-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    margin-top: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-.manager-table th,
-.manager-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
+/* Table Header */
 .manager-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background-color: #5271ff;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
+/* Table Cells */
+.manager-table td {
+    padding: 12px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* Row Stripe Effect */
 .manager-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f4f6ff;
 }
 
+/* Hover Effect */
 .manager-table tr:hover {
-    background-color: #e6f7ff;
+    background-color: #e7edff;
+    transition: 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 24px;
+    }
+
+    .manager-table th,
+    .manager-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
