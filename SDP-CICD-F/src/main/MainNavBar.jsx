@@ -42,9 +42,9 @@ export default function MainNavBar() {
           <li className="dropdown">
             <span><FaSignInAlt /> Login ▾</span>
             <ul className="dropdown-menu">
-              <li><Link to="/customerlogin" onClick={() => setMenuOpen(true)}>Customer</Link></li>
-              <li><Link to="/managerlogin" onClick={() => setMenuOpen(true)}>Manager</Link></li>
-              <li><Link to="/adminlogin" onClick={() => setMenuOpen(true)}>Admin</Link></li>
+              <li><Link to="/customerlogin">Customer</Link></li>
+              <li><Link to="/managerlogin" >Manager</Link></li>
+              <li><Link to="/adminlogin">Admin</Link></li>
             </ul>
           </li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}><FaEnvelope /> Contact</Link></li>
